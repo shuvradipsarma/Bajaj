@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Roll Number</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>BFHL Challenge</h1>
+    
+    <textarea id="jsonInput" placeholder='Enter JSON e.g. { "data": ["A", "1", "b", "3"] }'></textarea>
+    <button id="submitBtn">Submit</button>
+
+    <p id="error" class="error"></p>
+
+    <div id="dropdownContainer" class="hidden">
+      <label for="options">Select Options:</label>
+      <select id="options" multiple>
+        <option value="alphabets">Alphabets</option>
+        <option value="numbers">Numbers</option>
+        <option value="highest_lowercase_alphabet">Highest Lowercase Alphabet</option>
+      </select>
+    </div>
+
+    <div id="resultsContainer" class="hidden">
+      <h2>Results</h2>
+      <div id="results"></div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
